@@ -12,10 +12,10 @@ $ kubectl apply -f ./kubernetes/namespace.yaml
 # DB Servers
 - mysql 
     - standalone
-        - hostPath
-        - local
+        - [hostPath](./kubernetes/mysql/standalone/hostpath/README.md)
+        - [local](./kubernetes/mysql/standalone/local/README.md)
 - redis
     - standalone
-        - configMap
+        - [configMap](./kubernetes/redis/standalone/configmap/README.md)
     - cluster
-        - local
+        - [local](./kubernetes/redis/cluster/local/README.md)
