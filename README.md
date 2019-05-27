@@ -16,4 +16,6 @@ $ kubectl apply -f ./kubernetes/namespace.yaml
         - local
 - redis
     - standalone
-        - configMap        
+        - configMap
+    - cluster
+        - local

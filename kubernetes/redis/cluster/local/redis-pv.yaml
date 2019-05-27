@@ -1,0 +1,95 @@
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: redis-pv-volume-0
+  labels:
+    type: local
+spec:
+  storageClassName: local-storage
+  capacity:
+    storage: 200Mi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    # directory location on host
+    path: "/d/data/redis/node0/"
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: redis-pv-volume-1
+  labels:
+    type: local
+spec:
+  storageClassName: local-storage
+  capacity:
+    storage: 200Mi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    # directory location on host
+    path: "/d/data/redis/node1/"
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: redis-pv-volume-2
+  labels:
+    type: local
+spec:
+  storageClassName: local-storage
+  capacity:
+    storage: 200Mi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    # directory location on host
+    path: "/d/data/redis/node2/"
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: redis-pv-volume-3
+  labels:
+    type: local
+spec:
+  storageClassName: local-storage
+  capacity:
+    storage: 200Mi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    # directory location on host
+    path: "/d/data/redis/node3/"
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: redis-pv-volume-4
+  labels:
+    type: local
+spec:
+  storageClassName: local-storage
+  capacity:
+    storage: 200Mi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    # directory location on host
+    path: "/d/data/redis/node4/"
+---
+apiVersion: v1
+kind: PersistentVolume
+metadata:
+  name: redis-pv-volume-5
+  labels:
+    type: local
+spec:
+  storageClassName: local-storage
+  capacity:
+    storage: 200Mi
+  accessModes:
+    - ReadWriteOnce
+  hostPath:
+    # directory location on host
+    path: "/d/data/redis/node5/"
